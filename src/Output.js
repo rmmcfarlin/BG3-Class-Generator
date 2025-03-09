@@ -11,20 +11,29 @@ function Output () {
 
    const Roll = () => {
     let result = GetClass()
-    
+    let subResult = GetSubclass(result)
+
     setHeading(result)
-    setImage(result)
-    setSubheading(GetSubclass(result))
+    setImage(subResult)
+    setSubheading(subResult)
   };
+
+  const SubReroll = () => {
+    let newSubResult = GetSubclass(heading)
+
+    setImage(newSubResult)
+    setSubheading(newSubResult)
+  }
 
     return (
         <div className="generator">
-            <img src={require(`./assets/${image}.png`)} style={{width:"200px"}}></img>
+            <img src={require(`./assets/sub-classes/${image}.png`)} style={{width:"200px"}} alt="Subclass Icon"></img>
             <h2>{heading}</h2>   
             <h3>{subheading}</h3>
             <button onClick={Roll}>
                 Roll
             </button>
+            <button onClick={SubReroll} className="secondaryButton">Reroll Subclass</button>
         </div>
         
     )

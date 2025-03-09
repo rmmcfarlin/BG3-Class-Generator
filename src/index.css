@@ -16,7 +16,7 @@ code {
 
 .header {
   width: min(85vw, 930px);
-  margin: 3rem;
+  margin: 1.5rem;
   display: flex;
   align-items: center;
   justify-self: center;
@@ -26,6 +26,7 @@ code {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 4rem;
 }
 
 h3 {
@@ -40,7 +41,15 @@ button {
   background-color: #efbe7d;
   color: black;
   margin-top: 2rem;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
+}
+
+.secondaryButton {
+  width: 100px;
+  height: 50px;
+  background-color: #bebebe;
+  margin: 0;
+
 }
 
 @media screen and (max-width: 48rem) {

@@ -1,15 +1,15 @@
-const GetSubclass = (result) => { {
+const GetSubclass = (result) => { 
 
     let num = (Math.random() * 10)
 
-    if (result == "Barbarian"){
+    if (result === "Barbarian"){
         switch (true) {
             case num < 2.5:
                 return "Wildheart"
             case num >= 2.5 && num < 5:
                 return "Berserker"
             case num >= 5 && num < 7.5:
-                return "Wild Magic"
+                return " Wild Magic"
             case num >= 7.5:
                 return "Giant"
             default:
@@ -17,7 +17,7 @@ const GetSubclass = (result) => { {
         }
     }
 
-    if (result == "Bard"){
+    if (result === "Bard"){
         switch (true) {
             case num < 2.5:
                 return "College of Lore"
@@ -32,7 +32,7 @@ const GetSubclass = (result) => { {
         }
     }
 
-    if (result == "Cleric"){
+    if (result === "Cleric"){
         switch (true) {
             case (num >= 0.00 && num < 1.25):
                return "Life Domain";
@@ -55,7 +55,7 @@ const GetSubclass = (result) => { {
         }
     }
 
-    if (result == "Druid"){
+    if (result === "Druid"){
         switch (true) {
             case num < 2.5:
                 return "Circle of the Land"
@@ -70,7 +70,7 @@ const GetSubclass = (result) => { {
         }
     }
 
-    if (result == "Fighter"){
+    if (result === "Fighter"){
         switch (true) {
             case num < 2.5:
                 return "Battle Master"
@@ -85,7 +85,7 @@ const GetSubclass = (result) => { {
         }
     }
 
-    if (result == "Monk"){
+    if (result === "Monk"){
         switch (true) {
             case num < 2.5:
                 return "Way of the Four Elements"
@@ -100,7 +100,7 @@ const GetSubclass = (result) => { {
         }
     }
 
-    if (result == "Paladin"){
+    if (result === "Paladin"){
         switch (true) {
             case num < 2:
                 return "Oath of the Ancients"
@@ -117,7 +117,7 @@ const GetSubclass = (result) => { {
         }
     }
 
-    if (result == "Ranger"){
+    if (result === "Ranger"){
         switch (true) {
             case num < 2.5:
                 return "Hunter"
@@ -132,7 +132,7 @@ const GetSubclass = (result) => { {
         }
     }
 
-    if (result == "Rogue"){
+    if (result === "Rogue"){
         switch (true) {
             case num < 2.5:
                 return "Thief"
@@ -147,10 +147,10 @@ const GetSubclass = (result) => { {
         }
     }
 
-    if (result == "Sorcerer"){
+    if (result === "Sorcerer"){
         switch (true) {
             case num < 2.5:
-                return "Wild Magic"
+                return "Wild Magic "
             case num >= 2.5 && num < 5:
                 return "Draconic Bloodline"
             case num >= 5 && num < 7.5:
@@ -162,7 +162,7 @@ const GetSubclass = (result) => { {
         }
     }
 
-    if (result == "Warlock"){
+    if (result === "Warlock"){
         switch (true) {
             case num < 2.5:
                 return "The Fiend"
@@ -177,7 +177,7 @@ const GetSubclass = (result) => { {
         }
     }
 
-    if (result == "Wizard"){
+    if (result === "Wizard"){
       switch (true) {
         case (num >= 0.00 && num < 1.11):
             return "Abjuration";
@@ -201,7 +201,7 @@ const GetSubclass = (result) => { {
             return "Divination";
     }
     }
-    }
 }
+
 
 export default GetSubclass;

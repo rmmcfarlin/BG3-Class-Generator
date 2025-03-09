@@ -1,7 +1,7 @@
 function Header () {
 
     const headerIconStyle = {
-        width: "325px",
+        width: "275px",
         display: "inline"
     }
     return (

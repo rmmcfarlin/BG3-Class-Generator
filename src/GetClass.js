@@ -1,5 +1,5 @@
 const GetClass = () => {
-    let num = (Math.random() * 10) + 1
+    let num = (Math.random() * 10)
     switch (true) {
         case num < 0.8333:
             return "Barbarian";
