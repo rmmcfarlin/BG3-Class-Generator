@@ -15,6 +15,7 @@ code {
 }
 
 .header {
+  width: min(85vw, 930px);
   margin: 3rem;
   display: flex;
   align-items: center;
@@ -27,6 +28,10 @@ code {
   align-items: center;
 }
 
+h3 {
+  margin-top: -1rem;
+}
+
 button {
   width: 200px;
   height: 50px;
@@ -34,4 +39,19 @@ button {
   border-radius: 5px;
   background-color: #efbe7d;
   color: black;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 48rem) {
+
+  .header {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
 }
