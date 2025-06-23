@@ -2,7 +2,7 @@
   "name": "react-sandbox",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://rmmcfarlin.github.io/bg3-class-generator",
+  "homepage": "https://rmmcfarlin.github.io/BG3-Class-Generator",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
